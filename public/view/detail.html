@@ -1,0 +1,57 @@
+<div class="container-fluid">
+    <div class="row header-detail">
+        <div class="header">
+            <button ng-click="back()">
+                <span class="glyphicon glyphicon-menu-left"></span>
+            </button>
+            <button class="btn-edit" ng-click="go('/editEmployee/' + employee.id)">
+                 Edit
+            </button>
+            <h3>Employee</h3>
+        </div>
+        <div class="list-group detail scrollbar">
+            <img ng-src="img/{{employee.pic}}">
+            <div class="name">
+                <h4 class="list-group-item-heading">{{employee.firstName}} {{employee.lastName}}</h4>
+                <p class="list-group-item-text">{{employee.title}}</p>
+                <p class="list-group-item-text">{{employee.city}}</p>
+            </div>
+            <div class="list-group-item">
+                <p class="title">Start Date</p>
+                <p>{{employee.startDate}}</p>
+            </div>
+            <a ng-click="go('employees/' + employee.managerId)" class="list-group-item" ng-show="employee.managerId !='0'">
+                <p class="title">View Manager</p>
+                <p>{{employee.manager}}</p>
+                <span class="glyphicon glyphicon-menu-right"></span>
+            </a>
+            <a ng-click="go('employees/' + employee.id + '/reports')" class="list-group-item" ng-show="employee.directReports !='0'">
+                <p class="title">View Direct Reports</p>
+                <p>{{employee.directReports}}</p>
+                <span class="glyphicon glyphicon-menu-right"></span>
+            </a>
+
+            <a href="tel:{{employee.officePhone}}" class="list-group-item">
+                <p class="title">Office Phone</p>
+                <p>{{employee.officePhone}}</p>
+                <span class="glyphicon glyphicon-earphone"></span>
+            </a>
+            <a href="tel:{{employee.cellPhone}}" class="list-group-item">
+                <p class="title">Cell Phone</p>
+                <p>{{employee.cellPhone}}</p>
+                <span class="glyphicon glyphicon-phone"></span>
+
+            </a>
+            <a href="sms:{{employee.SMS}}" class="list-group-item">
+                <p class="title">SMS</p>
+                <p>{{employee.SMS}}</p>
+                <span class="glyphicon glyphicon-send"></span>
+            </a>
+            <a href="mailto:{{employee.email}}" class="list-group-item">
+                <p class="title">Email</p>
+                <p>{{employee.email}}</p>
+                <span class="glyphicon glyphicon-envelope"></span>
+            </a>
+        </div>
+    </div>
+</div>

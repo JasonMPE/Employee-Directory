@@ -1,0 +1,206 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #e6e6e6;
+}
+.container-fluid .header{
+    border-bottom:1px solid #bbb;
+}
+
+@media only screen and (max-width: 400px){
+    .container-fluid .header h3{
+        margin-left:20%;
+    }
+}
+
+.container-fluid .header h3{
+    text-align: center;
+    position: relative;
+    bottom: 5px;
+    z-index: -1;
+}
+.header button{
+    display:block;
+    float:left;
+    border:none;
+    font-size:22px;
+    color:#00cbcc;
+    margin-left:5px;
+    background-color:#e6e6e6;
+    position:relative;
+    bottom:5px;
+}
+
+@media only screen and (max-width: 400px) {
+    .header button{
+        margin-left:2%;
+    }
+}
+
+.list-group .list-group-item{
+    background-color:#e6e6e6;
+    border-top:1px solid #bbb;
+    padding:5px;
+    border-radius:0px;
+}
+.bottom-line{
+    width:100%;
+    /*height:20px;*/
+    /*position: relative;
+    top:-20px;*/
+    border-top:1px solid #bbb;
+}
+.employee a:hover{
+    text-decoration: none;
+    background-color:#ccc;
+}
+img{
+    height:60px;
+}
+.name{
+    display:inline-block;
+    position:relative;
+    top:15px;
+
+}
+.report{
+    float:right;
+    margin-top:20px;
+}
+
+.report .reportNum{
+    font-size:18px;
+    color:#00cbcc;
+    position:relative;
+    top:-8px;
+}
+.report .chevron{
+    color:#00cbcc;
+}
+.chevron span{
+    font-size:28px;
+}
+/*====================employeeList==============================*/
+
+@media only screen and (max-width: 400px){
+    .form-group {
+        margin:10px 1.5%;
+    }
+}
+
+@media only screen and (min-width: 400px){
+    .form-group {
+        margin:10px 10px;
+    }
+}
+
+#search {
+    background: #ffffff url(../img/search-bg.png) no-repeat scroll 13px 13px;
+    padding-left:40px;
+}
+
+.directory .scrollbar {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    top: 124px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.directory .btn-new{
+    float:right;
+    font-size:16px;
+}
+@media only screen and (max-width: 400px){
+    .directory .btn-new{
+        margin-right:3%;
+    }
+}
+@media only screen and (min-width: 400px){
+    .directory .btn-new{
+        margin-right:1%;
+    }
+}
+/*=======================detail=================================*/
+.detail img{
+    height:80px;
+    margin-bottom:9px;
+    padding-left:5px;
+}
+
+.detail .title{
+    color:#00cbcc;
+}
+
+.header .btn-edit{
+    float:right;
+    font-size:16px;
+    margin-right:10px;
+    position:relative;
+    top:1px;
+}
+@media only screen and (max-width: 400px) {
+    .header .btn-edit{
+        margin-right:2%;
+    }
+}
+.header-detail h3{
+    position:relative;
+    right:15px;
+    z-index:-1;
+}
+
+.header-detail .list-group{
+    background-color:#d9d9d9;
+}
+
+.detail .glyphicon{
+    float:right;
+    position:relative;
+    top:-45px;
+    font-size:26px;
+    color:#00cbcc;
+}
+.detail .list-group-item:last-child{
+    border-bottom: 1px solid #bbb;
+}
+.header-detail .scrollbar{
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    top: 57px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+}
+/*=================================reports===========================*/
+.header-report h3{
+    position:relative;
+    right:30px;
+}
+.container-fluid .header-report{
+    border:0px;
+}
+/*=================================newEmployee=======================*/
+.newOne .header h3{
+    position:relative;
+    right: 10px;
+}
+.newOne .form-group{
+    margin:5px 20px;
+}
+/*===================================editEmployee======================*/
+.editEmployee .header h3{
+    position:relative;
+    right: 10px;
+}
+.editEmployee .form-group{
+    margin:5px 20px;
+}
+
+
